@@ -1,0 +1,187 @@
+header {
+	 background: #2E86C1 ;
+         height:10em;
+ }
+ 
+
+ footer {
+	 background: #2E86C1;
+     margin-top:-20px;
+     height:40px;
+     
+ }
+
+#coverimage{margin:0 auto; 
+display: block}
+
+
+
+nav{margin-left: 250px;}
+
+.navigationbar{margin-top: -25px}
+
+
+.topnavigation{border: solid;
+    border-radius:60%;
+display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+background-color:#2E86C1;
+margin-left: 5px;
+margin-right: 5px;
+margin-top: -20px;
+font-size: 1.2em;
+padding:10px;
+color:white;
+border-color: black;
+}
+
+.navbuttons{border: solid;
+    border-radius:60%;
+display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+background-color:#2E86C1;
+margin-left: 5px;
+margin-right: 5px;
+margin-top: 20px;
+font-size: 1.2em;
+padding:10px;
+color:white;
+border-color: black;}
+
+.meethilarynav{background-color: #A93226;}
+.productnav{background-color: #0E6655;}
+.anecdotenav{background-color:#1F618D;}
+.requestnav{background-color: #A93226;}
+.contactnav{background-color: #0E6655;}
+
+a:hover > .topnavigation{background-color: white; color:#2E86C1; cursor: pointer}
+a:hover > .meethilarynav{background-color: white; color:#A93226; cursor: pointer}
+a:hover > .productnav{background-color: white; color:#0E6655; cursor: pointer}
+a:hover > .anecdotenav{background-color: white; color:#1F618D; cursor: pointer}
+a:hover > .requestnav{background-color: white; color:#A93226; cursor: pointer}
+a:hover > .contactnav{background-color: white; color:#0E6655; cursor: pointer}
+a, a:visited {color:#fff; width:inherit;height: inherit; text-decoration: none; }
+
+
+
+
+
+
+h1 {
+    color: #334d66;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.title{color: white; font-family: "Italianno", cursive; font-size: 5em}
+
+.subtitle{color:white; font-family: cursive; font-size: 1.1em}
+
+.sectiontitle{color: white; font-family: "Dancing Script", cursive;font-size: 4em}
+
+h2 {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+hr{border-style: dashed; width: 50%; border-width: thick   }
+
+p {
+    color: #334d66;
+    font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 1.4em;
+
+}
+
+.white {
+    font-family: 'Open Sans', sans-serif;
+	color: #fff;
+}
+
+
+.center {
+	text-align: center;
+}
+
+.top {
+	padding-top: 40px;
+} 
+  
+.top {
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  z-index: 1000;
+}
+
+#logo {
+	padding-left: 10px;
+    padding-top: 10px;
+	
+}
+
+.sectioncontent{float:left}
+
+.meethilary {
+	background-color: #A93226;
+	padding-top: 20px;
+	padding-bottom: 80px;
+}
+
+#meethilaryimageone{float: left; width:15%; padding-left: 20px}
+#meethilaryimagetwo{float:right; width: 15%; padding-right: 20px}
+#meethilarycontent{float:left; width:60%; padding-left: 35px}
+.requestproduct {
+	background-color: #A93226;
+	padding-top: 20px;
+	padding-bottom: 80px;
+}
+
+
+.products{
+	background-color: #0E6655  ;
+	padding-top: 20px;
+	padding-bottom: 80px;
+}
+.contacthilary{
+	background-color: #0E6655  ;
+	padding-top: 20px;
+	padding-bottom: 80px;
+}
+
+.customeranecdotes{
+	background-color: #1F618D  ;
+	padding-top: 20px;
+	padding-bottom: 80px;
+}
+
+.homesection{background-color: rgb(31, 97, 141);
+margin-bottom: -20px;
+margin-top:-20px;
+padding-bottom: 10px}
+
+
+
+
+
+
+
+
+
+
+
