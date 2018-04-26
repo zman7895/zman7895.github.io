@@ -4,11 +4,13 @@
 	
 	<title>Hilary's Personal Art Gallery</title>
     <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <style>
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico|Italianno');
 </style>
     <script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="javascripts/smoothscroll.js"></script>
+    
 </head>
 <body>
 
@@ -21,17 +23,17 @@
 	  <div>
       <img id="logo" src="Images/logo.png" height="120" width="120" alt="websitelogo">
       </div>
-      <div>
+      <div class = "header">
         <nav>
-          <div class="navigationbar">
+          <div class="navigationbar" id="mynavigationbar">
             
                 
               <a href="#meethilary"><button class="topnavigation">Meet Hilary</button></a>
               <a href='#products'><button class="topnavigation">Products</button></a>
-              <a href="#customeranecdotes"><button class="topnavigation">Customer Anecdotes</button></a>
+              <a href="#customeranecdotes"><button class="topnavigation">Anecdotes</button></a>
               <a href="#requestproduct"><button class="topnavigation">Request Product</button></a>
               <a href="#contact"><button class="topnavigation">Contact Hilary</button></a>
-                
+<!--              <a href="javascript:void(0);" class="openorcloseicon" size="20px" onclick="myFunction()">&#9776;</a>-->
                 
             
           </div>
@@ -45,8 +47,8 @@
    <div class="container">
     <div class="homesection">
 			 <h1 class="center title">Hilary's Hall of Art</h1>
-             <img id="coverimage" src="Images/coverphoto.jpg" style="height: 18em; min-width: 200px; width: 15%">
-             <h3 class="subtitle center">Thank you for visiting my webpage. It means the world to me. I hope you enjoy your visit!</h3>
+             <img id="coverimage" src="Images/coverphoto.jpg" style="height: 18em; min-width: 300px; width: 15%">
+             <h3 class="subtitle center">Thank you for visiting my webpage. I hope you enjoy your visit!</h3>
         
     </div>       
 </div>
@@ -78,13 +80,13 @@ Feel free to contact me with any questions! I love getting to know my clients so
     </div>
     </div>
 	<div>
-        <nav>
+        <nav class="nottopnav">
           <div>
             
                 
               <a href="#home"><button class="meethilarynav navbuttons">Home</button></a>
               <a href='#products'><button class="meethilarynav navbuttons">Products</button></a>
-              <a href="#customeranecdotes"><button class="meethilarynav navbuttons">Customer Anecdotes</button></a>
+              <a href="#customeranecdotes"><button class="meethilarynav navbuttons">Anecdotes</button></a>
               <a href="#requestproduct"><button class="meethilarynav navbuttons">Request Product</button></a>
               <a href="#contact"><button class="meethilarynav navbuttons">Contact Hilary</button></a>
                 
@@ -106,21 +108,30 @@ Feel free to contact me with any questions! I love getting to know my clients so
         
          <h2 class="sectiontitle">Products by Hilary</h2>
          <hr class="white">
-            <p class="white center">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?" </p>
-         
+            <p class="white center">Below are the current items that I have finished and are still available. This section will be updated regularly. You will notice a variety of weird items. This is because I just create whatever comes to my mind. From shirts, to mugs, to weird pencil sketches, it will all be here. The products I make by request (See Product Request link) are not found here because they are made specifically and privately for people. These items will vary over time and so you don't see anything you like now, check back in the future! Lastly, if you are interested in any of them, I currently am not running purchases through this site. Hopefully that comes soon! Therefore, you should reach me via the Request Product section or any of the Social Media links at the bottom of the page. Thanks!  </p>
+            <div class="productgallery">
+            <figure class="productfigure"><img class="productimage" src="Images/products/20180417_214514.jpg"><figcaption class="center white">Snowy Mountain Skyline Paintings</figcaption></figure>
+            <figure class="productfigure"><img class="productimage" src="Images/products/20180417_214539.jpg"><figcaption class="center white">Relaxing Woman Pencil Sketch</figcaption></figure>
+            <figure class="productfigure"><img class="productimage" src="Images/products/20180417_214619.jpg"><figcaption class="center white">"Leave Her Wild" Custom Tee -- Story of my life :)</figcaption></figure>
+            <figure class="productfigure"><img class="productimage" src="Images/products/20180417_214633.jpg"><figcaption class="center white">Love and Soul Wall Drawing</figcaption></figure>
+            <figure class="productfigure"><img class="productimage" src="Images/products/20180417_214649.jpg"><figcaption class="center white">Yarn O'Lanterns</figcaption></figure>
+            <figure class="productfigure"><img class="productimage" src="Images/products/20180417_225948.jpg"><figcaption class="center white">Table Top Wood Carved Storage Box</figcaption></figure>
+            <figure class="productfigure"><img class="productimage" src="Images/products/IMG954196.jpg"><figcaption class="center white">Customized Coffee Mug -- I loveeee my Coffee! Contact me to talk best coffee shops :) </figcaption></figure>
+            <figure class="productfigure"><img class="productimage" src="Images/products/Screenshot_20180417-213636.png"><figcaption class="center white">Fearless and Soul Table Drawing</figcaption></figure>
+            </div>
         
 		
         
     </div>
     </div>
 	<div>
-        <nav>
+        <nav class="nottopnav">
           <div>
             
                 
               <a href="#home"><button class="productnav navbuttons">Home</button></a>
               <a href='#meethilary'><button class="productnav navbuttons">Meet Hilary</button></a>
-              <a href="#customeranecdotes"><button class="productnav navbuttons">Customer Anecdotes</button></a>
+              <a href="#customeranecdotes"><button class="productnav navbuttons">Anecdotes</button></a>
               <a href="#requestproduct"><button class="productnav navbuttons">Request Product</button></a>
               <a href="#contact"><button class="productnav navbuttons">Contact Hilary</button></a>
                 
@@ -138,13 +149,19 @@ Feel free to contact me with any questions! I love getting to know my clients so
         
           <h2 class="sectiontitle">Customer Anecdotes</h2>
          <hr class="white">
-         <p class="white center">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"  </p>
+         <div class="threecolumns">
+            <div class="column1"> <p class="white center" id="meethilarycontent">I met Hilary in Asheville and after only talking at the local brewery for a couple hours we planned to meet up to go to all the arts and crafts shops Asheville has to offer. We found so many cute items, but one really stood out to me. It was just a little simple jewelry box, but it was so expensive. I was pretty upset about that. Throughout the weekend Hilary and I exchanged information. About 2 weeks later a suprise came to my doorstep, and it was the jewelry box, only she made it! It looked just like it, and she said she made it for next to nothing. I couldn't believe how amazing of a person could know someone for a short few hours and yet do something so nice. We have been friends ever since! </p>
+             </div>
+             <div class="column2"> <p class="white center" id="meethilarycontent">I met Hilary in Asheville and after only talking at the local brewery for a couple hours we planned to meet up to go to all the arts and crafts shops Asheville has to offer. We found so many cute items, but one really stood out to me. It was just a little simple jewelry box, but it was so expensive. I was pretty upset about that. Throughout the weekend Hilary and I exchanged information. About 2 weeks later a suprise came to my doorstep, and it was the jewelry box, only she made it! It looked just like it, and she said she made it for next to nothing. I couldn't believe how amazing of a person could know someone for a short few hours and yet do something so nice. We have been friends ever since!</p></div>
+             <div class="column3"> <p class="white center" id="meethilarycontent">I met Hilary in Asheville and after only talking at the local brewery for a couple hours we planned to meet up to go to all the arts and crafts shops Asheville has to offer. We found so many cute items, but one really stood out to me. It was just a little simple jewelry box, but it was so expensive. I was pretty upset about that. Throughout the weekend Hilary and I exchanged information. About 2 weeks later a suprise came to my doorstep, and it was the jewelry box, only she made it! It looked just like it, and she said she made it for next to nothing. I couldn't believe how amazing of a person could know someone for a short few hours and yet do something so nice. We have been friends ever since!</p> </div>
+            
+            
 		
-        
+            </div>  
     </div>
     </div>
 	<div>
-        <nav>
+        <nav class="nottopnav">
           <div>
             
                 
@@ -159,9 +176,9 @@ Feel free to contact me with any questions! I love getting to know my clients so
           </div>
         </nav>
       </div>
-     </div>
-
-
+     
+    </div>
+    
 
 <div class="requestproduct" id="requestproduct">
 
@@ -172,21 +189,30 @@ Feel free to contact me with any questions! I love getting to know my clients so
         
          <h2 class="sectiontitle">Request a Product</h2>
          <hr class="white">
-            <p class="white center">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-         
-		
-        
+            <p class="white center">Using the form below you may add your name, contact information, and a product you would like Hilary to create specifically for your. Add a bit about yourself, what the product would mean to you, or why you want this product in order for Hilary to put the personalized touches on it that will make it extra special!</p>
+            <form class="center" action="mailto:zman7895@gmail.com" method="post" enctype="text/plain">
+                <span style="color:white"><i>Name</i></span><br>
+                <input type="text" name="name" size="40"><br>
+                <span style="color:white"><i>E-mail:</i></span><br>
+                <input type="text" name="mail" size="50" ><br>
+                <span style="color:white"> <i>Product Request Information:</i></span><br>
+                <textarea class="requesttextarea" type="textarea" rows=8 cols=80></textarea><br><br>
+                <input type="submit" value="Request">
+                <input type="reset" value="Reset">
+                </form>
+
+                 
     </div>
     </div>
 	<div>
-        <nav>
+        <nav class="nottopnav">
           <div>
             
                 
               <a href="#home"><button class="requestnav navbuttons">Home</button></a>
               <a href='#meethilary'><button class="requestnav navbuttons">Meet Hilary</button></a>
               <a href="#products"><button class="requestnav navbuttons">Products</button></a>
-              <a href="#customeranecdotes"><button class="requestnav navbuttons">Customer Anecdotes</button></a>
+              <a href="#customeranecdotes"><button class="requestnav navbuttons">Anecdotes</button></a>
               <a href="#contact"><button class="requestnav navbuttons">Contact Hilary</button></a>
                 
                 
@@ -207,21 +233,27 @@ Feel free to contact me with any questions! I love getting to know my clients so
         
          <h2 class="sectiontitle">Reach Out To Hilary</h2>
          <hr class="white">
-            <p class="white center">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?" </p>
+            <p class="white center">Hilary loves to stay connected. That is why you can always reach out to her via any of her social media accounts. On her facebook and instagram you will find her posting adorable photos of her cat that you may have seen above, of her amazing and handsome boyfriend Chris, and all her current projects. In addition she loves to share new music, tv shows, and hot takes! On her LinkedIn account you can find out more about her work history and the professional side of Hilary. If you want a more formal interaction, that is the place to go, however, if you just want to chat, talk art, life, and love, the first two are your best option. Click on any of the links below to access her profile page!</p>
+            <div class="socialmedialinks center">
+            <a href="https://www.facebook.com/hilary.hall.5" class="fa fa-facebook"></a> 
+                 <a href="https://www.instagram.com/hilaraayyyrose/" class="fa fa-instagram"></a>
+                <a href="https://www.linkedin.com/in/hilary-r-hall/" class="fa fa-linkedin"></a>
+                
+            </div>
          
 		
         
     </div>
     </div>
 	<div>
-        <nav>
+        <nav class="nottopnav">
           <div>
             
                 
               <a href="#home"><button class="contactnav navbuttons">Home</button></a>
               <a href='#meethilary'><button class="contactnav navbuttons">Meet Hilary</button></a>
               <a href="#products"><button class="contactnav navbuttons">Products</button></a>
-              <a href="#customeranecdotes"><button class="contactnav navbuttons">Customer Anecdotes</button></a>
+              <a href="#customeranecdotes"><button class="contactnav navbuttons">Anecdotes</button></a>
               <a href="#requestproduct"><button class="contactnav navbuttons">Request Product</button></a>
                 
                 
@@ -233,15 +265,26 @@ Feel free to contact me with any questions! I love getting to know my clients so
 
 
 <footer>
-  <div class="container">
+  <div>
       <div>
           
-          <p class="white center">Copyright 2018</p>
+          <p class="white center" style="font-size: 1.2em;">Copyright 2018</p>
 
       </div>
     </div>
 </footer>
 
-
+<!--
+<script>
+function myFunction() {
+    var x = document.getElementById("mynavigationbar");
+    if (x.className === "navigationbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navigationbar";
+    }
+}
+</script>
+-->
 </body>
 </html>
